@@ -277,10 +277,14 @@ export default function Landing() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
             {/* Tagline / CTA */}
-            <div className="lg:col-span-7 text-center lg:text-left space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-900/80 border border-neutral-800 rounded-full text-neutral-300 text-xs font-semibold select-none backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-cops-400 animate-pulse" />
-                Updated with High-Fidelity Mock App Screens
+            <div className="lg:col-span-7 text-center lg:text-left space-y-6 animate-fade-in">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <VTLogo className="w-14 h-14 text-white hover:text-cops-400 transition-colors shrink-0" />
+                <div className="h-6 w-[1px] bg-neutral-850 hidden sm:block" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-900/80 border border-neutral-800 rounded-full text-neutral-300 text-xs font-semibold select-none backdrop-blur-md">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cops-400 animate-pulse" />
+                  Updated with High-Fidelity Mock App Screens
+                </div>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">
                 IIT (BHU) <br />
