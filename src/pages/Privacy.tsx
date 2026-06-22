@@ -9,7 +9,7 @@ export default function Privacy() {
 
         <div className="mt-8 prose prose-gray max-w-none">
           <p>
-            This Privacy Policy describes how COPS IIT BHU ("we," "us," or "our") collects, uses,
+            This Privacy Policy describes how Club Of ProgrammerS IIT BHU ("we," "us," or "our") collects, uses,
             and shares your personal information when you use the Everything App (the "App"). By
             using the App, you agree to the collection and use of information in accordance with
             this policy.
@@ -226,12 +226,12 @@ export default function Privacy() {
           <ul>
             <li>
               <strong>Email:</strong>{' '}
-              <a href="mailto:cops@iitbhu.ac.in" className="text-cops-600 hover:underline">
-                cops@iitbhu.ac.in
+              <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+                contact@copsiitbhu.co.in
               </a>
             </li>
             <li>
-              <strong>Organization:</strong> COPS (Coding and Open Source Society), IIT (BHU)
+              <strong>Organization:</strong> Club Of ProgrammerS (COPS), IIT (BHU)
               Varanasi
             </li>
             <li>

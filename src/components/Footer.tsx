@@ -17,7 +17,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-cops-600 hover:underline"
               >
-                COPS
+                Club Of ProgrammerS (COPS)
               </a>
               .
             </p>

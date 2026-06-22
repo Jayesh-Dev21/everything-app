@@ -66,7 +66,7 @@ export default function Landing() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-cops-100 rounded-full text-cops-700 text-xs font-medium mb-6">
-              Built by COPS IIT BHU
+              Built by Club Of ProgrammerS (COPS) IIT BHU
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
               Everything{' '}

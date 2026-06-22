@@ -26,8 +26,8 @@ export default function DeleteAccount() {
           <h2>Option 2: Request via Email</h2>
           <p>
             Send an email to{' '}
-            <a href="mailto:cops@iitbhu.ac.in" className="text-cops-600 hover:underline">
-              cops@iitbhu.ac.in
+            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+              contact@copsiitbhu.co.in
             </a>{' '}
             from the email address associated with your Everything App account with the subject
             line <strong>"Account Deletion Request - Everything App"</strong>.
@@ -89,8 +89,8 @@ export default function DeleteAccount() {
           <h2>Need Help?</h2>
           <p>
             If you encounter any issues with the account deletion process, please contact us at{' '}
-            <a href="mailto:cops@iitbhu.ac.in" className="text-cops-600 hover:underline">
-              cops@iitbhu.ac.in
+            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+              contact@copsiitbhu.co.in
             </a>{' '}
             and we will assist you promptly.
           </p>
@@ -98,8 +98,8 @@ export default function DeleteAccount() {
           <div className="mt-8 p-4 bg-gray-50 rounded-xl border border-gray-200">
             <h3 className="text-sm font-semibold text-gray-900">Contact Information</h3>
             <ul className="mt-2 text-sm text-gray-600">
-              <li><strong>Email:</strong> cops@iitbhu.ac.in</li>
-              <li><strong>Organization:</strong> COPS (Coding and Open Source Society), IIT (BHU) Varanasi</li>
+              <li><strong>Email:</strong> contact@copsiitbhu.co.in</li>
+              <li><strong>Organization:</strong> Club Of ProgrammerS (COPS), IIT (BHU) Varanasi</li>
               <li><strong>Response Time:</strong> Within 7 business days</li>
             </ul>
           </div>
