@@ -1,11 +1,11 @@
 export default function DeleteAccount() {
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-neutral-950 min-h-screen text-neutral-300">
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">Account Deletion</h1>
-        <p className="text-gray-500 text-sm">How to delete your Everything App account and data</p>
+        <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">Account Deletion</h1>
+        <p className="text-neutral-500 text-sm">How to delete your Everything App account and data</p>
 
-        <div className="mt-8 prose prose-gray max-w-none">
+        <div className="mt-8 markdown-content max-w-none">
           <p>
             We respect your right to control your personal data. If you wish to delete your
             Everything App account and all associated data, you have two options:
@@ -26,7 +26,7 @@ export default function DeleteAccount() {
           <h2>Option 2: Request via Email</h2>
           <p>
             Send an email to{' '}
-            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-400 hover:text-cops-300 hover:underline">
               contact@copsiitbhu.co.in
             </a>{' '}
             from the email address associated with your Everything App account with the subject
@@ -89,15 +89,15 @@ export default function DeleteAccount() {
           <h2>Need Help?</h2>
           <p>
             If you encounter any issues with the account deletion process, please contact us at{' '}
-            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-400 hover:text-cops-300 hover:underline">
               contact@copsiitbhu.co.in
             </a>{' '}
             and we will assist you promptly.
           </p>
 
-          <div className="mt-8 p-4 bg-gray-50 rounded-xl border border-gray-200">
-            <h3 className="text-sm font-semibold text-gray-900">Contact Information</h3>
-            <ul className="mt-2 text-sm text-gray-600">
+          <div className="mt-8 p-5 bg-neutral-900/50 rounded-xl border border-neutral-850">
+            <h3 className="text-sm font-bold text-white mb-2">Contact Information</h3>
+            <ul className="mt-2 text-sm text-neutral-400 space-y-1">
               <li><strong>Email:</strong> contact@copsiitbhu.co.in</li>
               <li><strong>Organization:</strong> Club Of ProgrammerS (COPS), IIT (BHU) Varanasi</li>
               <li><strong>Response Time:</strong> Within 7 business days</li>

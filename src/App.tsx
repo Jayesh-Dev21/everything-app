@@ -7,7 +7,7 @@ import DeleteAccount from './pages/DeleteAccount'
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-900">
+    <div className="min-h-screen flex flex-col bg-neutral-950 text-neutral-100 selection:bg-cops-500/30 selection:text-white">
       <Navbar />
       <main className="flex-1">
         <Routes>

@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 
 export default function Privacy() {
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-neutral-950 min-h-screen text-neutral-300">
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-gray-500 text-sm">Last updated: June 22, 2026</p>
+        <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">Privacy Policy</h1>
+        <p className="text-neutral-500 text-sm">Last updated: June 22, 2026</p>
 
-        <div className="mt-8 prose prose-gray max-w-none">
+        <div className="mt-8 markdown-content max-w-none">
           <p>
             This Privacy Policy describes how Club Of ProgrammerS IIT BHU ("we," "us," or "our") collects, uses,
             and shares your personal information when you use the Everything App (the "App"). By
@@ -176,7 +176,7 @@ export default function Privacy() {
             </li>
             <li>
               <strong>Via our Website:</strong> Visit our{' '}
-              <Link to="/delete-account" className="text-cops-600 hover:underline">
+              <Link to="/delete-account" className="text-cops-400 hover:text-cops-300 hover:underline">
                 Account Deletion page
               </Link>{' '}
               to submit a deletion request.
@@ -226,7 +226,7 @@ export default function Privacy() {
           <ul>
             <li>
               <strong>Email:</strong>{' '}
-              <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-600 hover:underline">
+              <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-400 hover:text-cops-300 hover:underline">
                 contact@copsiitbhu.co.in
               </a>
             </li>
@@ -240,7 +240,7 @@ export default function Privacy() {
                 href="https://copsiitbhu.co.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cops-600 hover:underline"
+                className="text-cops-400 hover:text-cops-300 hover:underline"
               >
                 https://copsiitbhu.co.in
               </a>
