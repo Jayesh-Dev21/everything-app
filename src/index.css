@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cops-50: #f0f0ff;
+  --color-cops-100: #e0e0ff;
+  --color-cops-200: #c4c4ff;
+  --color-cops-300: #9e9eff;
+  --color-cops-400: #7c6dff;
+  --color-cops-500: #5a3dff;
+  --color-cops-600: #4a26e0;
+  --color-cops-700: #3d1dbd;
+  --color-cops-800: #341a99;
+  --color-cops-900: #2d197a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
