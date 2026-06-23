@@ -137,14 +137,14 @@ export default function Privacy() {
             <li>Access controls limiting data access to authorized personnel only</li>
           </ul>
 
-          <h2>6. Data Retention and Deletion</h2>
+          <h2>6. Data Retention</h2>
           <p>
             We retain your personal information only as long as necessary to provide the App's
             services and fulfill the purposes described in this policy.
           </p>
           <ul>
             <li>
-              <strong>Account Data:</strong> Retained until you request account deletion.
+              <strong>Account Data:</strong> Retained for the duration of your association with the institute. Since the App is strictly for college members (students, professors, proctors) and is linked to the official college email, account deletion is not possible while you are an active member of the institution.
             </li>
             <li>
               <strong>SOS Alert Records:</strong> Retained for a period of 12 months for safety
@@ -159,41 +159,11 @@ export default function Privacy() {
               90 days.
             </li>
           </ul>
-          <p>
-            When you request account deletion, we will delete your account information and
-            associated data within 30 days, except where we are required to retain certain data
-            for legal compliance, fraud prevention, or security purposes. In such cases, we will
-            inform you of the retention period and rationale.
-          </p>
-
-          <h2>7. Account Deletion</h2>
-          <p>
-            You can request deletion of your account and associated data in the following ways:
-          </p>
-          <ul>
-            <li>
-              <strong>Within the App:</strong> Go to Settings &rarr; Account &rarr; Delete Account.
-            </li>
-            <li>
-              <strong>Via our Website:</strong> Visit our{' '}
-              <Link to="/delete-account" className="text-cops-400 hover:text-cops-300 hover:underline">
-                Account Deletion page
-              </Link>{' '}
-              to submit a deletion request.
-            </li>
-          </ul>
-          <p>
-            Upon processing your deletion request, your account, profile data, and associated
-            records will be permanently removed. Note that temporary deactivation or freezing
-            of your account does not constitute deletion.
-          </p>
-
-          <h2>8. Your Rights</h2>
+          <h2>7. Your Rights</h2>
           <p>Depending on your jurisdiction, you may have the following rights:</p>
           <ul>
             <li>The right to access the personal data we hold about you</li>
             <li>The right to rectify inaccurate personal data</li>
-            <li>The right to request deletion of your personal data</li>
             <li>The right to restrict or object to processing of your personal data</li>
             <li>The right to data portability</li>
             <li>The right to withdraw consent at any time (without affecting the lawfulness of
@@ -203,7 +173,7 @@ export default function Privacy() {
             To exercise any of these rights, please contact us at the email address below.
           </p>
 
-          <h2>9. Children's Privacy</h2>
+          <h2>8. Children's Privacy</h2>
           <p>
             The App is intended for use by students and members of IIT (BHU) Varanasi. We do not
             knowingly collect personal information from children under 13 (or the applicable age
@@ -211,14 +181,14 @@ export default function Privacy() {
             please contact us immediately.
           </p>
 
-          <h2>10. Changes to This Privacy Policy</h2>
+          <h2>9. Changes to This Privacy Policy</h2>
           <p>
             We may update this Privacy Policy from time to time. We will notify you of any changes
             by posting the new policy on this page and updating the "Last updated" date. For
             material changes, we will provide additional notice through the App or via email.
           </p>
 
-          <h2>11. Contact Us</h2>
+          <h2>10. Contact Us</h2>
           <p>
             If you have any questions, concerns, or requests regarding this Privacy Policy or our
             data practices, please contact us:

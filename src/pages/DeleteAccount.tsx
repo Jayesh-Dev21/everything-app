@@ -3,104 +3,37 @@ export default function DeleteAccount() {
     <div className="pt-16 bg-neutral-950 min-h-screen text-neutral-300">
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">Account Deletion</h1>
-        <p className="text-neutral-500 text-sm">How to delete your Everything App account and data</p>
+        <p className="text-neutral-500 text-sm">Information regarding Everything App accounts</p>
 
         <div className="mt-8 markdown-content max-w-none">
           <p>
-            We respect your right to control your personal data. If you wish to delete your
-            Everything App account and all associated data, you have two options:
-          </p>
-
-          <h2>Option 1: Delete via the App (Recommended)</h2>
-          <ol>
-            <li>Open the Everything App on your device.</li>
-            <li>Go to <strong>Settings</strong> from the navigation menu.</li>
-            <li>Tap on <strong>Account</strong>.</li>
-            <li>Select <strong>Delete Account</strong>.</li>
-            <li>Confirm your decision when prompted.</li>
-          </ol>
-          <p>
-            Your account and associated data will be permanently deleted within 24 hours.
-          </p>
-
-          <h2>Option 2: Request via Email</h2>
-          <p>
-            Send an email to{' '}
-            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-400 hover:text-cops-300 hover:underline">
-              contact@copsiitbhu.co.in
-            </a>{' '}
-            from the email address associated with your Everything App account with the subject
-            line <strong>"Account Deletion Request - Everything App"</strong>.
+            The Everything App is exclusively designed for use by college members (students, professors, and proctors) and is directly linked to official college email accounts.
           </p>
           <p>
-            Please include your full name and institute roll number (if applicable) so we can
-            verify your identity. We will process your request and send a confirmation email
-            within 7 business days.
+            To maintain institutional records, security, and the integrity of essential features like SOS and mess management, <strong>direct account deletion by users is not possible</strong>.
           </p>
 
-          <h2>What Gets Deleted</h2>
-          <p>When you delete your account, the following data is permanently removed:</p>
-          <ul>
-            <li>Your profile information (name, email, photo)</li>
-            <li>Authentication records</li>
-            <li>Mess menu preferences (if any)</li>
-            <li>SOS alert history (after applicable retention period for safety auditing)</li>
-            <li>FCM device tokens</li>
-          </ul>
-
-          <h2>What May Be Retained</h2>
+          <h2>How to Request Account Updates or Deletion</h2>
           <p>
-            In certain circumstances, we may need to retain limited data even after account
-            deletion:
+            If you need your account information updated or believe your account should be deleted (e.g., you are no longer associated with the institute), you cannot do so directly through the app or website. Instead, you must follow the official institutional process:
           </p>
           <ul>
             <li>
-              <strong>SOS alert records</strong> may be retained for up to 12 months for
-              safety, audit, and legal compliance purposes. These records contain only basic
-              information (timestamp, anonymized location) and are not linked to your deleted
-              account.
+              Contact the <strong>DUGC (Departmental Undergraduate Committee)</strong> of your department or the relevant college administration.
             </li>
             <li>
-              <strong>Aggregated analytics data</strong> that does not identify you personally
-              may be retained for service improvement.
+              Requests for account updates or deletion will <strong>only be entertained and processed if they come directly from the college administration</strong>.
             </li>
           </ul>
-          <p>
-            Data retention for legal or safety purposes will be clearly communicated to you at
-            the time of your deletion request.
-          </p>
-
-          <h2>Important Notes</h2>
-          <ul>
-            <li>
-              <strong>Account deletion is permanent.</strong> Once your account is deleted, it
-              cannot be recovered. You will need to create a new account to use the App again.
-            </li>
-            <li>
-              Temporary deactivation, disabling, or freezing your account does not qualify as
-              account deletion under Google Play policy.
-            </li>
-            <li>
-              If you need to retain certain data (such as academic records linked to your
-              account), please contact us before submitting a deletion request.
-            </li>
-          </ul>
-
-          <h2>Need Help?</h2>
-          <p>
-            If you encounter any issues with the account deletion process, please contact us at{' '}
-            <a href="mailto:contact@copsiitbhu.co.in" className="text-cops-400 hover:text-cops-300 hover:underline">
-              contact@copsiitbhu.co.in
-            </a>{' '}
-            and we will assist you promptly.
-          </p>
 
           <div className="mt-8 p-5 bg-neutral-900/50 rounded-xl border border-neutral-850">
-            <h3 className="text-sm font-bold text-white mb-2">Contact Information</h3>
+            <h3 className="text-sm font-bold text-white mb-2">Technical Support</h3>
+            <p className="text-sm text-neutral-400 mb-2">
+              For technical issues not related to account deletion, you can reach out to us:
+            </p>
             <ul className="mt-2 text-sm text-neutral-400 space-y-1">
               <li><strong>Email:</strong> contact@copsiitbhu.co.in</li>
               <li><strong>Organization:</strong> Club Of ProgrammerS (COPS), IIT (BHU) Varanasi</li>
-              <li><strong>Response Time:</strong> Within 7 business days</li>
             </ul>
           </div>
         </div>
