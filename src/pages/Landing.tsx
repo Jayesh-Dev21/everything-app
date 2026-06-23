@@ -72,29 +72,29 @@ function BearAvatar({ className }: { className?: string }) {
     >
       {/* Background Circle */}
       <circle cx="50" cy="50" r="50" fill="#7193a0" />
-      
+
       {/* Bear Ears */}
       <circle cx="32" cy="35" r="7.5" fill="#ffffff" />
       <circle cx="32" cy="35" r="4.5" fill="#e2c5c5" />
       <circle cx="68" cy="35" r="7.5" fill="#ffffff" />
       <circle cx="68" cy="35" r="4.5" fill="#e2c5c5" />
-      
+
       {/* Acorn Hat Stem */}
       <rect x="48.5" y="14" width="3" height="7" rx="1" fill="#4d3525" />
       {/* Acorn Hat Body */}
       <path d="M 33,33 C 33,18 67,18 67,33 Z" fill="#785943" />
-      
+
       {/* Bear Head */}
       <circle cx="50" cy="50" r="21" fill="#ffffff" />
-      
+
       {/* Eyes */}
       <circle cx="43" cy="46" r="2.2" fill="#2d3748" />
       <circle cx="57" cy="46" r="2.2" fill="#2d3748" />
-      
+
       {/* Snout */}
       <ellipse cx="50" cy="54" rx="6" ry="4.5" fill="#f0f0f0" />
       <polygon points="48,52 52,52 50,54.5" fill="#2d3748" />
-      
+
       {/* Scarf Around Neck */}
       <path
         d="M 34,65 C 38,72 62,72 66,65 C 66,65 67,71 63,74 C 55,78 45,78 37,74 Z"
@@ -102,7 +102,7 @@ function BearAvatar({ className }: { className?: string }) {
       />
       {/* Scarf Tail */}
       <path d="M 60,68 L 65,88 L 57,90 Z" fill="#9ec4cf" />
-      
+
       {/* Bear Body/Torso */}
       <path d="M 29,90 C 29,76 36,68 50,68 C 64,68 71,76 71,90 Z" fill="#ffffff" />
     </svg>
@@ -122,12 +122,12 @@ function QRCode({ className }: { className?: string }) {
       <rect x="0" y="0" width="28" height="28" rx="2" />
       <rect x="4" y="4" width="20" height="20" rx="1" fill="#ffffff" />
       <rect x="8" y="8" width="12" height="12" rx="0.5" />
-      
+
       {/* Top-Right Finder Pattern */}
       <rect x="72" y="0" width="28" height="28" rx="2" />
       <rect x="76" y="4" width="20" height="20" rx="1" fill="#ffffff" />
       <rect x="80" y="8" width="12" height="12" rx="0.5" />
-      
+
       {/* Bottom-Left Finder Pattern */}
       <rect x="0" y="72" width="28" height="28" rx="2" />
       <rect x="4" y="76" width="20" height="20" rx="1" fill="#ffffff" />
@@ -145,7 +145,7 @@ function QRCode({ className }: { className?: string }) {
       <rect x="60" y="8" width="4" height="4" />
       <rect x="32" y="16" width="12" height="4" />
       <rect x="52" y="16" width="8" height="8" />
-      
+
       {/* Middle row gap fill */}
       <rect x="0" y="36" width="12" height="8" />
       <rect x="20" y="36" width="8" height="4" />
@@ -153,18 +153,18 @@ function QRCode({ className }: { className?: string }) {
       <rect x="48" y="36" width="16" height="4" />
       <rect x="72" y="36" width="8" height="8" />
       <rect x="88" y="36" width="12" height="4" />
-      
+
       <rect x="8" y="48" width="4" height="12" />
       <rect x="24" y="48" width="12" height="4" />
       <rect x="44" y="48" width="4" height="8" />
       <rect x="56" y="48" width="12" height="12" />
       <rect x="76" y="48" width="16" height="4" />
-      
+
       <rect x="0" y="60" width="8" height="4" />
       <rect x="16" y="60" width="16" height="8" />
       <rect x="40" y="60" width="8" height="4" />
       <rect x="84" y="60" width="8" height="8" />
-      
+
       {/* Bottom row gap fill */}
       <rect x="36" y="72" width="12" height="8" />
       <rect x="56" y="72" width="8" height="4" />
@@ -186,7 +186,7 @@ const messMenus = {
 export default function Landing() {
   // Mobile Phone Mockup State: 'login' | 'authenticating' | 'dashboard' | 'digital_id' | 'admin' | 'timetable' | 'mess'
   const [appState, setAppState] = useState<'login' | 'authenticating' | 'dashboard' | 'digital_id' | 'admin' | 'timetable' | 'mess'>('login')
-  
+
   // Student Mock User details
   const [studentUser, setStudentUser] = useState({
     name: 'Rohan Sharma',
@@ -197,7 +197,7 @@ export default function Landing() {
 
   // Timer for QR updates
   const [qrTimer, setQrTimer] = useState(30)
-  
+
   // Timetable selected day (1 to 7)
   const [activeDay, setActiveDay] = useState<number>(1)
 
@@ -266,16 +266,16 @@ export default function Landing() {
 
   return (
     <div className="pt-16 min-h-screen text-neutral-100 bg-neutral-950 overflow-hidden">
-      
+
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 flex items-center justify-center">
         {/* Glow Gradients */}
         <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cops-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
-        
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            
+
             {/* Tagline / CTA */}
             <div className="lg:col-span-7 text-center lg:text-left space-y-6 animate-fade-in">
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -293,11 +293,13 @@ export default function Landing() {
                 </span>
               </h1>
               <p className="max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg text-neutral-400 leading-relaxed font-medium">
-                We have meticulously rebuilt the website mockup with pixel-perfect layouts direct from 
-                the production app. Interact with the digital ID, class schedules, 
-                timetable indicators, and admin panels below.
+                The {" "}
+                <span className="text-yellow-300 font-semibold">
+                  IIT(BHU) Everything App
+                </span>{" "}
+                is the all-in-one campus companion built exclusively for the IIT (BHU) community. Developed by the Club of ProgrammerS (COPS), the app brings together essential academic tools, campus services, event management, and safety features in a secure and seamless experience.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <a
                   href="#mockup-anchor"
@@ -313,26 +315,26 @@ export default function Landing() {
                 </span>
               </div>
             </div>
-            
+
             {/* Phone Mockup Window */}
             <div id="mockup-anchor" className="lg:col-span-5 flex flex-col items-center justify-center">
-              
+
               {/* Smartphone Frame Outer Shell */}
               <div className="relative w-[330px] h-[650px] bg-neutral-900 border-4 border-neutral-800 rounded-[50px] shadow-2xl overflow-hidden ring-1 ring-neutral-700/50 flex flex-col p-1.5">
-                
+
                 {/* Speaker & Camera Notch */}
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-6 bg-neutral-900 rounded-full z-30 flex items-center justify-center gap-1.5">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-800" />
                   <div className="w-12 h-1 bg-neutral-800 rounded-full" />
                 </div>
-                
+
                 {/* Active Simulated Screen Area */}
                 <div className="flex-1 rounded-[42px] overflow-hidden flex flex-col relative select-none">
 
                   {/* -------------------- VIEW 0: MOCK LOGIN SCREEN (Dark Theme) -------------------- */}
                   {appState === 'login' && (
                     <div className="flex-1 bg-[#121212] flex flex-col justify-between px-6 pb-6 pt-10 text-center text-white rounded-[38px] overflow-hidden">
-                      
+
                       {/* Top Status Indicators */}
                       <div className="h-6 flex items-center justify-between text-[9px] text-neutral-500 font-bold">
                         <span>18:43</span>
@@ -417,14 +419,14 @@ export default function Landing() {
                   {/* -------------------- VIEW 2: STUDENT HOME DASHBOARD (Image 2) -------------------- */}
                   {appState === 'dashboard' && (
                     <div className="flex-1 bg-[#f5f6f8] text-neutral-900 flex flex-col justify-between overflow-hidden relative rounded-[38px]">
-                      
+
                       {/* Top Header Section */}
                       <div className="px-5 pt-10 pb-3 bg-white flex items-center justify-between shadow-2xs">
                         <div className="text-left">
                           <h1 className="text-xl font-black text-neutral-900 tracking-tight leading-none">everything</h1>
                           <p className="text-[9px] text-neutral-400 font-bold mt-1 uppercase tracking-wider">IIT (BHU) Varanasi</p>
                         </div>
-                        
+
                         <div className="flex items-center gap-2.5">
                           {/* Bell Notification Button */}
                           <button className="w-8 h-8 rounded-full bg-[#f3f4f6] flex items-center justify-center text-neutral-600 hover:bg-neutral-200 transition">
@@ -444,7 +446,7 @@ export default function Landing() {
 
                       {/* Scrollable Dashboard Viewport */}
                       <div className="flex-1 overflow-y-auto px-4 py-3 space-y-4 text-left scrollbar-none">
-                        
+
                         {/* Search bar */}
                         <div className="relative">
                           <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -525,7 +527,7 @@ export default function Landing() {
 
                           {/* Time table Card (High fidelity) */}
                           <div className="bg-white rounded-2xl p-4 shadow-3xs border border-neutral-100 flex flex-col space-y-3.5">
-                            
+
                             {/* Class status badge & countdown */}
                             <div className="flex items-center justify-between">
                               <span className="inline-flex items-center gap-1.5 px-2.5 py-0.8 bg-green-50 text-green-700 rounded-full text-[8px] font-black uppercase tracking-wider">
@@ -551,7 +553,7 @@ export default function Landing() {
 
                             {/* Timeline display */}
                             <div className="relative border-l border-neutral-200 pl-3 ml-1.5 space-y-3 text-[9.5px]">
-                              
+
                               {/* Completed Item */}
                               <div className="relative">
                                 <span className="absolute -left-[16px] top-1 w-2.5 h-2.5 rounded-full bg-neutral-300 border-2 border-white" />
@@ -591,7 +593,7 @@ export default function Landing() {
                             </svg>
                             Urgent Updates
                           </div>
-                          
+
                           {/* Library Warning Box */}
                           <div className="bg-[#fef2f2] border border-red-100 rounded-2xl p-3.5 flex gap-3 shadow-3xs">
                             <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0 shadow-4xs text-red-500">
@@ -619,7 +621,7 @@ export default function Landing() {
                             </span>
                             <span className="text-green-600 font-black">Hostel 2</span>
                           </div>
-                          
+
                           {/* Menu card */}
                           <div
                             onClick={() => setAppState('mess')}
@@ -699,7 +701,7 @@ export default function Landing() {
                             <span className="text-[8px] font-bold mt-0.5">Classes</span>
                           </button>
                         </div>
-                        
+
                         {/* Home bar indicator */}
                         <div className="h-4 flex items-center justify-center pb-2 select-none">
                           <div className="w-24 h-1 bg-neutral-300 rounded-full" />
@@ -711,7 +713,7 @@ export default function Landing() {
                   {/* -------------------- VIEW 3: DIGITAL ID SCREEN (Image 1) -------------------- */}
                   {appState === 'digital_id' && (
                     <div className="flex-1 bg-[#f5f6f8] text-neutral-900 flex flex-col justify-between overflow-hidden relative rounded-[38px]">
-                      
+
                       {/* Title Bar Header */}
                       <div className="px-4 pt-10 pb-4 bg-white border-b border-neutral-100 flex items-center">
                         <button
@@ -727,10 +729,10 @@ export default function Landing() {
 
                       {/* Digital ID Body */}
                       <div className="flex-1 p-6 flex flex-col items-center justify-center space-y-6">
-                        
+
                         {/* Elevated White ID Card Wrapper */}
                         <div className="w-full bg-white rounded-3xl p-6 shadow-md flex flex-col items-center space-y-4 border border-neutral-100">
-                          
+
                           {/* Polar Bear Avatar */}
                           <div className="w-20 h-20 rounded-full border-2 border-neutral-100 shadow-2xs overflow-hidden">
                             <BearAvatar className="w-full h-full" />
@@ -778,14 +780,14 @@ export default function Landing() {
                   {/* -------------------- VIEW 4: ADMIN PORTAL DASHBOARD (Image 3) -------------------- */}
                   {appState === 'admin' && (
                     <div className="flex-1 bg-[#f5f6f8] text-neutral-900 flex flex-col justify-between overflow-hidden relative rounded-[38px]">
-                      
+
                       {/* Header bar */}
                       <div className="px-5 pt-10 pb-3 bg-white flex items-center justify-between shadow-2xs">
                         <div className="text-left">
                           <h1 className="text-xl font-black text-neutral-900 tracking-tight leading-none">Admin Portal</h1>
                           <p className="text-[9px] text-neutral-400 font-bold mt-1 uppercase tracking-wider">IIT (BHU) Varanasi</p>
                         </div>
-                        
+
                         <div className="flex items-center gap-2.5">
                           {/* Bell */}
                           <button className="w-8 h-8 rounded-full bg-[#f3f4f6] flex items-center justify-center text-neutral-600">
@@ -806,7 +808,7 @@ export default function Landing() {
 
                       {/* Scroll Area */}
                       <div className="flex-1 overflow-y-auto px-4 py-3 space-y-4 text-left scrollbar-none">
-                        
+
                         {/* Search Input */}
                         <div className="relative">
                           <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -823,18 +825,26 @@ export default function Landing() {
                         {/* Grid items */}
                         <div className="grid grid-cols-4 gap-2 text-center pt-1">
                           {[
-                            { label: 'ID Scanner', bg: 'bg-blue-100/80 text-blue-600', icon: (
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5zM17.25 12h3.75m-3.75 3h3.75M12 21a9 9 0 1118 0" />
-                            )},
-                            { label: 'SOS Alerts', bg: 'bg-red-100/80 text-red-600', icon: (
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.03L3.07 19.5h17.86L12 2.72zM12 15.75h.007v.008H12v-.008z" />
-                            )},
-                            { label: 'Users', bg: 'bg-amber-100/80 text-amber-600', icon: (
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a6 6 0 00-3.44-5.24m4.94-1.8a5.5 5.5 0 10-6.96-6.96M3.28 17.5c0-2.485 5.216-4.5 11.64-4.5s11.64 2.015 11.64 4.5" />
-                            )},
-                            { label: 'Reports', bg: 'bg-purple-100/80 text-purple-600', icon: (
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6zM13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
-                            )}
+                            {
+                              label: 'ID Scanner', bg: 'bg-blue-100/80 text-blue-600', icon: (
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5zM17.25 12h3.75m-3.75 3h3.75M12 21a9 9 0 1118 0" />
+                              )
+                            },
+                            {
+                              label: 'SOS Alerts', bg: 'bg-red-100/80 text-red-600', icon: (
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.03L3.07 19.5h17.86L12 2.72zM12 15.75h.007v.008H12v-.008z" />
+                              )
+                            },
+                            {
+                              label: 'Users', bg: 'bg-amber-100/80 text-amber-600', icon: (
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a6 6 0 00-3.44-5.24m4.94-1.8a5.5 5.5 0 10-6.96-6.96M3.28 17.5c0-2.485 5.216-4.5 11.64-4.5s11.64 2.015 11.64 4.5" />
+                              )
+                            },
+                            {
+                              label: 'Reports', bg: 'bg-purple-100/80 text-purple-600', icon: (
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6zM13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                              )
+                            }
                           ].map((item, idx) => (
                             <div key={idx} className="flex flex-col items-center gap-1.5 cursor-pointer">
                               <div className={`w-12 h-12 rounded-full ${item.bg} flex items-center justify-center`}>
@@ -855,7 +865,7 @@ export default function Landing() {
                             </svg>
                             Live Statistics
                           </div>
-                          
+
                           {/* 3-Column stats block */}
                           <div className="bg-white rounded-2xl p-4 shadow-3xs border border-neutral-100 grid grid-cols-3 gap-2 text-center divide-x divide-neutral-100">
                             <div className="space-y-1">
@@ -868,7 +878,7 @@ export default function Landing() {
                               <h4 className="text-sm font-black text-neutral-900">1,247</h4>
                               <p className="text-[8px] text-neutral-400 font-bold uppercase tracking-wider">Active Students</p>
                             </div>
-                            
+
                             <div className="space-y-1 pt-0.5">
                               <div className="flex justify-center text-red-500">
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -878,7 +888,7 @@ export default function Landing() {
                               <h4 className="text-sm font-black text-neutral-900">3</h4>
                               <p className="text-[8px] text-neutral-400 font-bold uppercase tracking-wider">Open SOS</p>
                             </div>
-                            
+
                             <div className="space-y-1 pt-0.5">
                               <div className="flex justify-center text-green-500">
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -906,21 +916,31 @@ export default function Landing() {
                           {/* List Card */}
                           <div className="bg-white rounded-2xl shadow-3xs border border-neutral-100 divide-y divide-neutral-100 p-1">
                             {[
-                              { label: 'ID scanned: Rahul Sharma (CSE)', time: '2 min ago', bg: 'bg-blue-50 text-blue-600', icon: (
-                                <path d="M12 4v1M18 10h2m-6 0h-2v4" />
-                              )},
-                              { label: 'SOS alert resolved at Hostel 4', time: '15 min ago', bg: 'bg-amber-50 text-amber-600', icon: (
-                                <path d="M12 9v2m0 4h.01" />
-                              )},
-                              { label: 'New student registered: Priya Verma', time: '1 hr ago', bg: 'bg-green-50 text-green-600', icon: (
-                                <path d="M18 9v3m0 0v3m0-3h3m-3 0h-3" />
-                              )},
-                              { label: 'ID scanned: Amit Kumar (ECE)', time: '1 hr ago', bg: 'bg-blue-50 text-blue-600', icon: (
-                                <path d="M12 4v1M18 10h2" />
-                              )},
-                              { label: 'Profile updated: Dr. Singh', time: '2 hrs ago', bg: 'bg-purple-50 text-purple-600', icon: (
-                                <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                              )}
+                              {
+                                label: 'ID scanned: Rahul Sharma (CSE)', time: '2 min ago', bg: 'bg-blue-50 text-blue-600', icon: (
+                                  <path d="M12 4v1M18 10h2m-6 0h-2v4" />
+                                )
+                              },
+                              {
+                                label: 'SOS alert resolved at Hostel 4', time: '15 min ago', bg: 'bg-amber-50 text-amber-600', icon: (
+                                  <path d="M12 9v2m0 4h.01" />
+                                )
+                              },
+                              {
+                                label: 'New student registered: Priya Verma', time: '1 hr ago', bg: 'bg-green-50 text-green-600', icon: (
+                                  <path d="M18 9v3m0 0v3m0-3h3m-3 0h-3" />
+                                )
+                              },
+                              {
+                                label: 'ID scanned: Amit Kumar (ECE)', time: '1 hr ago', bg: 'bg-blue-50 text-blue-600', icon: (
+                                  <path d="M12 4v1M18 10h2" />
+                                )
+                              },
+                              {
+                                label: 'Profile updated: Dr. Singh', time: '2 hrs ago', bg: 'bg-purple-50 text-purple-600', icon: (
+                                  <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                )
+                              }
                             ].map((act, idx) => (
                               <div key={idx} className="p-3 flex items-center justify-between text-[9.5px]">
                                 <div className="flex items-center gap-2.5">
@@ -949,7 +969,7 @@ export default function Landing() {
                   {/* -------------------- VIEW 5: TIMETABLE & ATTENDANCE (Image 4 - Dark Mode) -------------------- */}
                   {appState === 'timetable' && (
                     <div className="flex-1 bg-[#121212] text-neutral-100 flex flex-col justify-between overflow-hidden relative font-sans rounded-[38px]">
-                      
+
                       {/* Dark Header bar */}
                       <div className="px-4 pt-10 pb-4 border-b border-neutral-900 flex items-center justify-between bg-neutral-900/30">
                         <div className="flex items-center">
@@ -963,7 +983,7 @@ export default function Landing() {
                           </button>
                           <span className="text-base font-extrabold text-white tracking-wide">Timetable</span>
                         </div>
-                        
+
                         {/* Plus add button */}
                         <button className="p-1 hover:bg-neutral-850 rounded-full text-neutral-400 hover:text-white transition cursor-pointer">
                           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -974,18 +994,17 @@ export default function Landing() {
 
                       {/* Content Scroll View */}
                       <div className="flex-1 overflow-y-auto px-4 py-3 space-y-4 scrollbar-none text-left">
-                        
+
                         {/* Horizontal Day selection row */}
                         <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 scrollbar-none select-none">
                           {[1, 2, 3, 4, 5, 6, 7].map((day) => (
                             <button
                               key={day}
                               onClick={() => setActiveDay(day)}
-                              className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-black shrink-0 transition-all cursor-pointer ${
-                                activeDay === day
-                                  ? 'bg-[#60b0f4] text-neutral-950 font-black shadow-md'
-                                  : 'text-neutral-400 hover:text-white bg-transparent'
-                              }`}
+                              className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-black shrink-0 transition-all cursor-pointer ${activeDay === day
+                                ? 'bg-[#60b0f4] text-neutral-950 font-black shadow-md'
+                                : 'text-neutral-400 hover:text-white bg-transparent'
+                                }`}
                             >
                               {day}
                             </button>
@@ -1016,7 +1035,7 @@ export default function Landing() {
                               </div>
                             </div>
                           </div>
-                          
+
                           {/* Alert notice */}
                           <div className="bg-amber-955/15 border border-amber-900/40 rounded-xl p-2.5 text-[8.5px] font-bold text-amber-500 leading-none">
                             need to attend 1 lecture
@@ -1036,7 +1055,7 @@ export default function Landing() {
                               </div>
                             </div>
                           </div>
-                          
+
                           {/* Alert notice */}
                           <div className="bg-amber-955/15 border border-amber-900/40 rounded-xl p-2.5 text-[8.5px] font-bold text-amber-500 leading-none">
                             can't miss the next lecture
@@ -1067,7 +1086,7 @@ export default function Landing() {
                   {/* -------------------- VIEW 6: MESS MENU SCREEN -------------------- */}
                   {appState === 'mess' && (
                     <div className="flex-1 bg-[#f5f6f8] text-neutral-900 flex flex-col justify-between overflow-hidden relative rounded-[38px]">
-                      
+
                       {/* Header bar */}
                       <div className="px-4 pt-10 pb-4 bg-white border-b border-neutral-100 flex items-center justify-between">
                         <div className="flex items-center">
@@ -1088,18 +1107,17 @@ export default function Landing() {
 
                       {/* Content */}
                       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4 text-left scrollbar-none">
-                        
+
                         {/* Meal Selector Tabs */}
                         <div className="grid grid-cols-4 gap-1 bg-white p-1 rounded-xl shadow-3xs border border-neutral-100">
                           {(['breakfast', 'lunch', 'snacks', 'dinner'] as const).map((meal) => (
                             <button
                               key={meal}
                               onClick={() => setMessMeal(meal)}
-                              className={`py-2 text-[9px] font-bold rounded-lg capitalize transition-all cursor-pointer ${
-                                messMeal === meal
-                                  ? 'bg-[#60b0f4] text-neutral-950 shadow-xs'
-                                  : 'text-neutral-500 hover:text-neutral-700'
-                              }`}
+                              className={`py-2 text-[9px] font-bold rounded-lg capitalize transition-all cursor-pointer ${messMeal === meal
+                                ? 'bg-[#60b0f4] text-neutral-950 shadow-xs'
+                                : 'text-neutral-500 hover:text-neutral-700'
+                                }`}
                             >
                               {meal}
                             </button>
@@ -1152,13 +1170,13 @@ export default function Landing() {
       {/* Feature Grid Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
-        
+
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Complete Toolkit for Campus Life
           </h2>
           <p className="text-neutral-400 font-medium text-base">
-            Engineered exclusively for IIT (BHU) Varanasi. Explore our high-utility modules 
+            Engineered exclusively for IIT (BHU) Varanasi. Explore our high-utility modules
             designed to solve everyday institute workflow issues.
           </p>
         </div>
@@ -1188,7 +1206,7 @@ export default function Landing() {
               Privacy and Trust First
             </h2>
             <p className="text-neutral-400 leading-relaxed font-medium text-sm sm:text-base">
-              The Everything App values student privacy above all. No location, biometric, or scan details 
+              The Everything App values student privacy above all. No location, biometric, or scan details
               are shared or archived beyond the designated safety parameters. Review our detailed policy.
             </p>
             <div className="pt-2">
@@ -1205,7 +1223,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      
+
     </div>
   )
 }
