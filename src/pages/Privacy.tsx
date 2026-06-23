@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 export default function Privacy() {
   return (
     <div className="pt-16 bg-neutral-950 min-h-screen text-neutral-300">
